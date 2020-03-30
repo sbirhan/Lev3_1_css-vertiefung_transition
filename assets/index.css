@@ -1,0 +1,57 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.frame{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87vw;
+    height: 75vh;
+    top: 10vh;
+    left: 5vw;
+    border: 20px double rgb(6, 70, 6);
+}
+
+.container{
+    position: relative;
+    width: 70vw;
+    height: 24vh;
+    border: 5px solid rgb(7, 75, 7);
+    background-color: rgb(75, 211, 75);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.ball-1{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color:rgb(7, 75, 7);
+    left: 1.5vw;
+    transition: left ease 4s;
+}
+
+.ball-2{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color:rgb(7, 75, 7);
+    left: 15vw;
+    transition: left ease 3s;
+    transition-delay: 1s;
+}
+
+.container:hover .ball-1{
+    left: 11vw;
+}
+
+.container:hover .ball-2{
+    left: 65vw;
+}
+
